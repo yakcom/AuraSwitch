@@ -5,7 +5,7 @@ import os,sys
 def settings():
     os.startfile('config.ini')
 
-def exit(icon, item):
+def exit(icon):
     icon.stop()
     os._exit(0)
 
