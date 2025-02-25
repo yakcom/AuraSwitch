@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6115f164-5739-4030-8f09-4d39be745654" name="Changes" comment="realtime config">
+    <list default="true" id="6115f164-5739-4030-8f09-4d39be745654" name="Changes" comment="realtime config effect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,8 @@
       <workItem from="1740480495806" duration="3242000" />
       <workItem from="1740484177858" duration="380000" />
       <workItem from="1740485476359" duration="306000" />
-      <workItem from="1740485939259" duration="6000" />
+      <workItem from="1740485939259" duration="42000" />
+      <workItem from="1740486914821" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="add tray icon and exit">
       <option name="closed" value="true" />
@@ -158,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740485627053</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="realtime config effect">
+      <option name="closed" value="true" />
+      <created>1740485963170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740485963170</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,9 +189,21 @@
     <MESSAGE value="some fix" />
     <MESSAGE value="add settings" />
     <MESSAGE value="realtime config" />
-    <option name="LAST_COMMIT_MESSAGE" value="realtime config" />
+    <MESSAGE value="realtime config effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="realtime config effect" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AuraSwitch$main.coverage" NAME="main Coverage Results" MODIFIED="1740485525486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AuraSwitch$main.coverage" NAME="main Coverage Results" MODIFIED="1740486921678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
