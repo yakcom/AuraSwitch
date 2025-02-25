@@ -2,12 +2,15 @@ from configparser import *
 from keyboard import *
 from system import *
 from time import *
+import threading
 import tray
 
 Config=ConfigParser()
 Config.read('config.ini')
 vid, pid, iid = (int(Config.get('keyboard', key), 16) for key in ('vid', 'pid', 'iid'))
 languages = {lang: [int(x, 16) for x in Config.get('languages', lang).split(',')] for lang in ('ru', 'en')}
+
+threading.Thread(target=tray.start).start()
 
 lang = None
 while True:

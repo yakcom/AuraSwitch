@@ -1,14 +1,17 @@
 from pystray import Icon, MenuItem, Menu
 from PIL import Image
-import os,threading
+import os,sys
 
-def exit_app(icon, item):
+def exit(icon, item):
     icon.stop()
     os._exit(0)
 
-def run_tray():
-    menu = Menu(MenuItem('Выход', exit_app))
-    tray_icon = Icon("TestIcon", Image.open("main.ico"), menu=menu)
-    tray_icon.run()
+def icon(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.abspath(relative_path)
 
-threading.Thread(target=run_tray, daemon=True).start()
+def start():
+    menu = Menu(MenuItem('Выход', exit))
+    tray_icon = Icon("TestIcon", Image.open(icon("main.ico")), menu=menu)
+    tray_icon.run()
